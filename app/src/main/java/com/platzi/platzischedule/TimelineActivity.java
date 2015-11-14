@@ -27,8 +27,7 @@ public class TimelineActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         CollapsingToolbarLayout collapsingToolbar = (CollapsingToolbarLayout)
-                findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle("Platzi");
+                                findViewById(R.id.collapsing_toolbar);
 
         loadBackdrop();
 
@@ -37,11 +36,13 @@ public class TimelineActivity extends AppCompatActivity {
 
         recyclerView.setHasFixedSize(true);
 
-        RecyclerView.ItemDecoration itemDecoration =  new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
+        RecyclerView.ItemDecoration itemDecoration =  new DividerItemDecoration
+                                                       (this, DividerItemDecoration.VERTICAL_LIST);
+
         recyclerView.addItemDecoration(itemDecoration);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-         ArrayList<Platzitime> platzicourses = new ArrayList<>();
+        ArrayList<Platzitime> platzicourses = new ArrayList<>();
 
         Platzitime platzitime = new Platzitime();
         platzitime.setTitle("Curso Profesional de Git y Github");
@@ -70,9 +71,6 @@ public class TimelineActivity extends AppCompatActivity {
         platzitime4.setImage_id(4);
 
         platzicourses.add(platzitime4);
-
-
-
 
 
         recyclerView.setAdapter(new Platzisheduleadapter(platzicourses, R.layout.row, this));

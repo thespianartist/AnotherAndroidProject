@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         app:layout_anchor="@id/appbar"
-        app:layout_anchorGravity="bottom|right|end"
+        app:layout_anchorGravity="bottom|end"
         app:fabSize="normal"
         app:elevation="2dp"
         android:src="@mipmap/ic_share_white_24dp"
