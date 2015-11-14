@@ -22,13 +22,19 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
+    //Agregando las librerias necesarias
+
+    //Toolbar
     compile 'com.android.support:appcompat-v7:23.0.0'
 
+
+    //Design Library
     compile 'com.android.support:design:23.0.0'
     compile 'com.android.support:recyclerview-v7:23.1.0'
     compile 'com.android.support:cardview-v7:23.0.0'
     compile 'com.android.support:palette-v7:23.0.0'
 
+    //Imagen en circulo y cache
     compile 'com.github.bumptech.glide:glide:3.6.0'
     compile 'de.hdodenhof:circleimageview:1.2.1'
 
